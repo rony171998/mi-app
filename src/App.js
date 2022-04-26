@@ -2,22 +2,27 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const yo={
+    name:"ruuny",
+    age:56,
+    movie:"iron man",
+    music:"all for us labrinth"
+  }
+  const jsx =<h1>asasd</h1>
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>
+        
+        <li><b>Nombre:</b>{yo.name}</li>
+        <li><b>Edad:</b>{yo.age}</li>
+        <li><b>Pelicula favorita:</b>{yo.movie}</li>
+        <li><b>Musica favorita:</b>{yo.music}</li>
+      </ul>
+      {jsx}
+      
     </div>
   );
 }
