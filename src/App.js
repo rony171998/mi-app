@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from './components/MyComponents';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   return (
 
     <div className="App">
+      <MyComponent/>
       <ul>
         
         <li><b>Nombre:</b>{yo.name}</li>
