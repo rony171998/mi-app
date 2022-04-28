@@ -1,19 +1,14 @@
 import React from 'react';
-const MyComponent = () => {
-    const yo={
-        name:"ruuny",
-        age:56,
-        movie:"iron man",
-        music:"all for us labrinth"
-      }
+const MyComponent = ({titulo, item1, item2, item3, color}) => {
+
+  
     return (
-        <div>
+        <div className={`${color} card`}>
             <ul>
-            <h1>Mis datos</h1>
-            <li><b>Nombre:</b>{yo.name}</li>
-            <li><b>Edad:</b>{yo.age}</li>
-            <li><b>Pelicula favorita:</b>{yo.movie}</li>
-            <li><b>Musica favorita:</b>{yo.music}</li>
+            <h1>{titulo}</h1>
+            <li><b>{item1}</b></li>
+            <li><b>{item2}</b></li>
+            <li><b>{item3}</b></li>              
       </ul></div>
     );
 };
