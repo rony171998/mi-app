@@ -11,7 +11,6 @@ const QuoteBox = () => {
     const changeQuote =()=>setIsQuote(randomQuote)
     let bodycolor =document.body.style
 
-    console.log(randomQuote)
 
     return (
         <div>
