@@ -1,0 +1,25 @@
+.quotes{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20%;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 10px;
+    width: auto;
+}
+.quotes .text{
+    text-align: center;
+}
+.quotes .author{
+    text-align: right;
+}
+.next{
+    border-style: none;
+    background-color: aliceblue;
+    margin-left: 92%;
+}
+i{
+    font-size: 50px;
+}
