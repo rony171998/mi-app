@@ -4,12 +4,16 @@ import "../QuoteStyles.css";
 import ChangeColorBackground from './ChangeColorBackground';
 import { useState } from 'react';
 
-
+    
+    
+    
+    
 const QuoteBox = () => {
-    const randomQuote = Math.floor(Math.random() * quotes.length)
-    const [isQuote, setIsQuote] = useState(randomQuote)
-    const changeQuote =()=>setIsQuote(randomQuote)
-    let bodycolor =document.body.style
+
+    let randomQuote = Math.floor(Math.random() * quotes.length);
+    let [isQuote, setIsQuote] = useState(0);
+    let changeQuote =()=>setIsQuote(randomQuote);
+    let bodycolor =document.body.style;
 
 
     return (
@@ -26,9 +30,9 @@ const QuoteBox = () => {
                     {quotes[isQuote].author}
                     
                 </h2>
-                <button className='next'  onClick= {()=> {changeQuote();ChangeColorBackground(); }}> 
+                <button className='next'  onClick= {changeQuote}> 
                            
-                    <i className="fa-solid fa-circle-chevron-right" style={{color:bodycolor.backgroundColor}}></i>
+                    <i onClick= {ChangeColorBackground} className="fa-solid fa-circle-chevron-right" style={{color:bodycolor.backgroundColor}}></i>
                 </button>
                 
             </div>
